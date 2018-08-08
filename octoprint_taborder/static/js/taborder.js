@@ -43,6 +43,7 @@ $(function() {
 					self.availableTabs.push(tabid.replace('temp_link','temperature_link').replace('term_link','terminal_link').replace('gcode_link','gcodeviewer_link').replace(/^(tab_)?(.+)_link$/g,'$2'));
 				}
 			});
+            jQuery(window).trigger('resize');
         }
 		
 		self.renderTabs = function(){
